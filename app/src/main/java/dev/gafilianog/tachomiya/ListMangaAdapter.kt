@@ -1,5 +1,6 @@
 package dev.gafilianog.tachomiya
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +27,20 @@ class ListMangaAdapter(private val listManga: ArrayList<Manga>) : RecyclerView.A
 
         holder.tvTitle.text = manga.title
         holder.tvGenre.text = manga.genres
+
+        val holderCtx = holder.itemView.context
+
+        holder.itemView.setOnClickListener {
+            val moveDetail = Intent(holderCtx, DetailActivity::class.java)
+            moveDetail.putExtra("extra_cover", manga.mangaCover)
+            moveDetail.putExtra("extra_title", manga.title)
+            moveDetail.putExtra("extra_status", manga.status)
+            moveDetail.putExtra("extra_author", manga.author)
+            moveDetail.putExtra("extra_genres", manga.genres)
+            moveDetail.putExtra("extra_synopsis", manga.synopsis)
+
+            holderCtx.startActivity(moveDetail)
+        }
     }
 
     override fun getItemCount(): Int {
