@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,17 +7,18 @@
     tools:context=".DetailActivity">
 
   <com.google.android.material.appbar.AppBarLayout
-      android:id="@+id/detail_app_bar"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       app:liftOnScroll="true">
+
     <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/detail_app_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:layout_scrollFlags="scroll|enterAlways|snap"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
-        app:title="Detail"
-        style="@style/Widget.Material3.Toolbar.Surface"/>
+        app:elevation="4dp"
+        app:title="Detail" />
   </com.google.android.material.appbar.AppBarLayout>
 
   <androidx.core.widget.NestedScrollView
@@ -33,6 +35,7 @@
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="match_parent"
+          android:layout_marginBottom="32dp"
           android:orientation="horizontal">
 
         <ImageView
@@ -45,7 +48,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="170dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -99,7 +103,6 @@
       <TextView
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_marginTop="32dp"
           android:layout_marginBottom="8dp"
           android:text="@string/synopsis"
           android:textSize="16sp"

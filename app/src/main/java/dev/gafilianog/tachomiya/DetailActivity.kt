@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toolbar
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
@@ -38,6 +39,10 @@ class DetailActivity : AppCompatActivity() {
         tvAuthor.text = "Author: $mangaAuthor"
         tvGenres.text = "Genres: $mangaGenres"
         tvSynopsis.text = mangaSynopsis
+
+        val detailAppBar: androidx.appcompat.widget.Toolbar = findViewById(R.id.detail_app_bar)
+        setSupportActionBar(detailAppBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onSupportNavigateUp(): Boolean {
