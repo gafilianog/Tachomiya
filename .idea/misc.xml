@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/layout/activity_detail.xml" value="0.4" />
+        <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/layout/activity_about.xml" value="0.2" />
+        <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/layout/activity_detail.xml" value="0.264" />
         <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/layout/fragment_about.xml" value="0.19067977768277042" />
+        <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/layout/fragment_detail.xml" value="0.19067977768277042" />
         <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/layout/item_row_manga.xml" value="0.264" />
+        <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/menu/navigation.xml" value="0.19067977768277042" />
         <entry key="..\:/Users/gafil/AndroidStudioProjects/Tachomiya/app/src/main/res/menu/top_app_bar.xml" value="0.23229166666666667" />
       </map>
     </option>

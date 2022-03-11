@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_activity"
+        android:icon="@drawable/ic_baseline_collections_bookmark_24"
+        android:enabled="true"
+        android:title="@string/library"/>
+<!--    <item-->
+<!--        android:id="@+id/gameFragment"-->
+<!--        android:icon="@drawable/mdi_dice_6_black_24dp"-->
+<!--        android:title="@string/game"/>-->
+    <item
+        android:id="@+id/fragment_about"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:enabled="true"
+        android:title="@string/about" />
+</menu>

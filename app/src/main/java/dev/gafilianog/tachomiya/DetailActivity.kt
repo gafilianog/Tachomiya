@@ -40,7 +40,7 @@ class DetailActivity : AppCompatActivity() {
         tvGenres.text = "Genres: $mangaGenres"
         tvSynopsis.text = mangaSynopsis
 
-        val detailAppBar: androidx.appcompat.widget.Toolbar = findViewById(R.id.detail_app_bar)
+        val detailAppBar: androidx.appcompat.widget.Toolbar = findViewById(R.id.detail_toolbar)
         setSupportActionBar(detailAppBar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
