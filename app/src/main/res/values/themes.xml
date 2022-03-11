@@ -29,4 +29,9 @@
         <item name="android:shadowColor">@color/md_theme_light_shadow</item>
         <item name="colorPrimaryInverse">@color/md_theme_light_primaryInverse</item>
     </style>
+    
+    <style name="splashScreenTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_image</item>
+        <item name="android:statusBarColor">@color/md_theme_light_primaryInverse</item>
+    </style>
 </resources>

@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_Tachomiya)
         setContentView(R.layout.activity_main)
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_nav)
